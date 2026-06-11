@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+    <link rel="stylesheet" href="./styles/new.css">
+</head>
+<body>
+    <form class="tab-new" action="/new" method="post">
+        <h2>Add Family Member</h2>
+        <p>Name : </p>
+        <input type="text" name="userName" id="userName" autofocus placeholder="Enter First Name" required>
+        <p>Colour : </p>
+        <input type="text" name="userColor" id="userColor" placeholder="Enter Colour Name" required>
+        <!-- <input type="submit" value="Add"> -->
+        <div class="container">
+            <input type="submit" name="add" value="Add" class="btn">
+            <input type="submit" name="cancel" value="Cancel" class="btn">
+        </div>
+    </form>
+</body>
+</html>

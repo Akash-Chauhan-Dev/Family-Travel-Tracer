@@ -33,7 +33,7 @@ body {
   transition: opacity 0.5s;
 
   z-index: -1;
-  margin-top: -90px;
+  margin-top: -70px;
 }
 .ag-canvas_svg {
   display: block;
@@ -97,20 +97,21 @@ button {
 .total-count {
   font-family: "Roboto", sans-serif;
   color: white;
-  position: absolute;
+  position: relative;
   padding: 15px;
   left: 0;
-  bottom: 0;
+  bottom: 50px;
 }
 
-/* .tab-view {
+.tab-view {
   margin: 0;
   padding: 0;
   border: 0;
   outline: none;
   font-size: 0;
-  text-align: left; */
+  text-align: left;
 }
+
 .tab-view > input {
   position: absolute;
   display: none;

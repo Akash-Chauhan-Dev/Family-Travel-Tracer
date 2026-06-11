@@ -17,9 +17,9 @@
         <label for="tab">+ Add Family Memeber</label> 
     </form>
 
-    <form>
-        <input type="text" name="country" style="background-color : white;" autofocus placeholder="<%= locals.error ? error : 'Enter Country Name' %>"> 
-        <button type="submit" style="background-color : <%= color %>">Add</button>
+    <form action="/add" method="post">
+        <input type="text" name="country" autofocus placeholder="<%= locals.error ? error : 'Enter Country Name' %>"> 
+        <button type="submit" name="add" style="background-color : <%= color %>">Add</button>
     </form>
 
     <section class="ag-canvas">
@@ -380,7 +380,7 @@
     </svg>
     </section>
 
-    <h2>Total Countries : <%= total %></h2>
+    <h2 class="total-count">Total Countries : <%= total %></h2>
     <script>
         var country_codes = "<%= countries %>".split(",");
         country_codes.forEach(code => {
