@@ -20,11 +20,6 @@ db.connect();
 
 let currentUserId = 1;
 
-let users = [
-    {id : 1 , name : 'Akash' , color : 'teal'},
-    {id : 2 , name : 'Nicolas' , color : 'green'}
-]
-
 async function checkVisited(){
     const result = await db.query("select country_code from visited_countries where user_id = $1" , [currentUserId]);
     let countries = [];
